@@ -1,0 +1,19 @@
+{
+  "name": "facial-recognition-watson",
+  "version": "1.0.0",
+  "description": "This is a simple project that implements a facial recognition.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheushpitz/Facial-Recognition-Watson.git"
+  },
+  "author": "Matheus Pitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheushpitz/Facial-Recognition-Watson/issues"
+  },
+  "homepage": "https://github.com/matheushpitz/Facial-Recognition-Watson#readme"
+}
