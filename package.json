@@ -20,5 +20,10 @@
   "devDependencies": {
     "concurrently": "^4.0.1",
     "dotenv": "^6.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "watson-developer-cloud": "^3.11.1"
   }
 }
