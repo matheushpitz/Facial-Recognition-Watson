@@ -17,7 +17,7 @@ class ImageUploader extends React.Component {
     changeFileHandle(ev) {
         // Get all the uploaded files.
         let files = ev.target.files;
-        if(files !== undefined && files.length > 0) {
+        if(files != undefined && files.length > 0) {
             let fileReader = new FileReader();
             // Wait for loading the file
             fileReader.onload = (e) => {

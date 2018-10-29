@@ -3,6 +3,7 @@ require('dotenv').config();
 
 // Start the express
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 
 // get the port from environment variables
@@ -17,6 +18,9 @@ app.use(function(req, res, next) {
     // Keep going.
     next();
 });
+
+// Creating our Middleware that will read and convert our request's body to JSON.
+app.use(bodyParser.json({limit: '10mb'}));
 
 // Create the main middleware
 app.post('', (req, res) => {
