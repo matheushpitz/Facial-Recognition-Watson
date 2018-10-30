@@ -5,6 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const fr = require('./FacialRecognition');
 
 // get the port from environment variables
 const port = process.env['PORT'] || 8080;
@@ -24,6 +25,7 @@ app.use(bodyParser.json({limit: '10mb'}));
 
 // Create the main middleware
 app.post('', (req, res) => {
+    fr.recognizeFaces(req.body.image);
     res.status(200);
     res.send('We received your request.');
 });
