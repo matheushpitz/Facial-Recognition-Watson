@@ -25,9 +25,17 @@ app.use(bodyParser.json({limit: '10mb'}));
 
 // Create the main middleware
 app.post('', (req, res) => {
-    fr.recognizeFaces(req.body.image);
-    res.status(200);
-    res.send('We received your request.');
+    // Detect the faces.
+    fr.recognizeFaces(req.body.image).then( data => {
+        // Send the response.
+        res.status(200);
+        res.send(data);
+    }).catch( err => {
+        console.log(err);
+        // Send a internal error.
+        res.status(500);
+        res.send();
+    });
 });
 
 // Start to listen to the port.
