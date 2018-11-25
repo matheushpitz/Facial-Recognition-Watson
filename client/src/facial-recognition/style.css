@@ -1,0 +1,20 @@
+.facial-recognition {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.face-box {
+    position: absolute;
+    border: #ffffff dashed 5px;
+}
+
+.face-box:hover {
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+.face-name {
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 1px 1px 5px #000000;
+}
