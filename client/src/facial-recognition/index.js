@@ -2,6 +2,7 @@ import React from 'react';
 import Axios from 'axios';
 import PropTypes from 'prop-types';
 import ImageUploader from './components/ImageUploader';
+import FaceInformation from './components/FaceInformation';
 import './style.css';
 
 class FacialRecognition extends React.Component {
@@ -42,6 +43,7 @@ class FacialRecognition extends React.Component {
         return(
             <div className = "facial-recognition">
                 <ImageUploader onChange = {this.changeHandle} data = {this.state.response} />
+                <FaceInformation data = {this.state.response} />
             </div>
         );
     }
