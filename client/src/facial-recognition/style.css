@@ -4,6 +4,11 @@
     transform: translate(-50%, 0%);
 }
 
+img.image-uploader {
+    max-width: 800px;
+    max-height: 800px;
+}
+
 .face-box {
     position: absolute;
     border: #ffffff dashed 5px;
